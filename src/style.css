@@ -54,6 +54,15 @@ nav{
     height: 100%;
     background: #baccd6;
 }
+.cartItem{
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+}
+.cartItemImg{
+    height: 100px;
+    width: 80px;
+}
 .Shop{
     text-align: center;
     display:flex;
