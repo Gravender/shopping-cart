@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Nav() {
+import Cart from "./components/cart";
+function Nav(props) {
+  const { cart, changeCart, products } = props;
   const navStyle = {
     color: "#BBB193",
   };
@@ -29,7 +31,9 @@ function Nav() {
       </nav>
       <div id="shoppingCart" className="shoppingCart">
         <div onClick={() => showCart()} className="blankArea"></div>
-        <div className="Cart"></div>
+        <div className="Cart">
+          <Cart cart={cart} changeCart={changeCart} products={products} />
+        </div>
       </div>
     </div>
   );
