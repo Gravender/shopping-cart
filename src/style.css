@@ -2,16 +2,26 @@
     margin: 0;
     padding: 0;
   }
-.App{
+  body{
+    background: #f6f0ed;
+    color: #7ea8be;
     text-align: center;
+}
+.product{
+    text-align: center;
+    
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    background: #586979;
-    color: white;
+    background: #28536B;
+    color: #BBB193;
+}
+.navTitle{
+
+    color: #C2948A;
 }
 .nav-links{
     width:40%;
@@ -19,4 +29,64 @@ nav{
     justify-content: space-around;
     align-items: center;
     list-style: none;
+}
+
+.shoppingCart{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.visible{
+    display: flex;
+    transition: 1s;
+    right: 0;
+}
+.blankArea{
+    width: 80%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+.Cart{
+    width: 20%;
+    height: 100%;
+    background: #baccd6;
+}
+.Shop{
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+.cardImg{
+    background-Color: #7EA8BE;
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+}
+.CardInfo{
+    text-align: left;
+    color: #75747b;
+    margin-top: 5px;
+}
+.cardTitle{
+    color: #75747b;
+}
+.cardLink{
+    text-decoration: none; 
+}
+.cardLink:hover {
+	text-decoration:underline;
+}
+.cardPrice{
+    color: #75747bcf;
 }
