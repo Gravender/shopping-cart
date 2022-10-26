@@ -1,26 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Card from "./components/card";
-function Shop() {
-  useEffect(() => {
-    fetchItems();
-  }, []);
-  const [items, setItems] = useState([]);
-  const fetchItems = async () => {
-    const data = await fetch(
-      `https://fortnite-api.theapinetwork.com/upcoming/get`
-    );
-    const items = await data.json();
-    setItems(items.data);
-    console.log(items.data);
-  };
+function Shop(props) {
+  const { products } = props;
   return (
     <div className="Shop">
-      {items.map((item) => (
+      {products.map((product) => (
         <Card
-          key={item.itemId}
-          id={item.itemId}
-          title={item.item.name}
-          imgSrc={item.item.images.icon}
+          key={product.id}
+          id={product.id}
+          title={product.title}
+          imgSrc={product.imgSrc}
+          price={product.price}
         />
       ))}
     </div>

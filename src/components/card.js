@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Card = (props) => {
-  const { id, imgSrc, title } = props;
-  const price = 35.25;
+  const { id, imgSrc, title, price } = props;
   return (
     <div key={id} className="Card">
       <Link className="cardLink cardImg" to={`/shop/${id}`}>
