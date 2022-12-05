@@ -10,7 +10,7 @@
 
 ```bash
 git clone https://github.com/gravender/shopping-cart.git
-cd memory-card
+cd shopping-cart
 npm install
 npm run start
 ```
